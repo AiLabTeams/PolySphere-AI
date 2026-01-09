@@ -11,7 +11,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 
 # 2. 使用 os.path.join 拼接相对路径
 # 对应逻辑: 当前目录 -> DataSet -> json -> train -> data
-input_folder = os.path.join(base_dir, 'DataSet', 'json', 'train', 'data')
+input_folder = os.path.join(base_dir, 'DataSet', 'data')
 
 # 对应逻辑: 当前目录 -> DataSet -> train_ready
 output_folder = os.path.join(base_dir, 'DataSet', 'train_ready')
@@ -143,4 +143,5 @@ def convert_json_to_dataset():
 
 
 if __name__ == '__main__':
+
     convert_json_to_dataset()
